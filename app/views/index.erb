@@ -1,0 +1,24 @@
+<section class="sign_in">
+<h1>Sign back in to Gritter</h1>
+<form method="post" action="/sessions">
+    <input type="text" name="user_name" placeholder="Username" id="post_submits"/>
+    <br><input name="password" class="input_text" type="password" placeholder="Password"id="post_submits" />
+    <br><input type="submit" value="Sign In!" id="greet_button">
+</form>
+</section>
+
+
+
+<section class="current">
+  Current Greets.....
+</section>
+
+<% @greets.reverse.each do |greet| %>
+
+	<section class="main">
+	  <p class="user_greet"><%=h greet.user_name %></p>
+	  <p class="body_greet"><%=h greet.body %></p>
+	  <p class="time_greet">Greeted at <%= greet.created_at.to_s.chars[0..15].each_slice(10).to_a.rotate.flatten.drop(1).insert(5, " ").join %></p>
+	</section>
+<% end %>
+</section>

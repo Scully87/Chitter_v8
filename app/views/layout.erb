@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Gritter!</title>
+        <link rel="stylesheet" type="text/css" href="/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/css/application.css">  
+        <script language="JavaScript" src="/src/dynlib.js"></script>
+        <script language="JavaScript" src="/src/bouncingimages.js"></script>
+    </head>
+  <body onLoad="javascript:loadBouncingImages();">
+  	<%= partial :header %>
+  <section class="all"><br><br>
+    <%= partial :flash %>
+    <%= partial :greet_section %>
+    <%= yield %>
+  </section>
+  	<%= partial :footer %>
+  </body>
+</html>
