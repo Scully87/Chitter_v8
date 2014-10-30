@@ -3,8 +3,8 @@ require 'data_mapper'
 require 'rack-flash'
 require 'sinatra/partial'
 
-require './lib/greet'
 require './lib/user'
+require './lib/greet'
 
 require_relative 'helpers/application'
 require_relative 'data_mapper_setup'
@@ -45,8 +45,8 @@ post '/users' do
 		session[:user_id] = @user.id
 		redirect to '/'
 	else
-		flash.now[:errors] = @user.errors.full_messages
-		erb :"users/new"
+		flash[:errors] = ["Please fill in all the sign up fields"]
+		redirect to '/'
 	end
 end
 
@@ -59,10 +59,10 @@ post '/sessions' do
 	user = User.authenticate(user_name, password)
 	if user
 		session[:user_id] = user.id
-		redirect to ('/')
+		redirect to('/')
 	else
 		flash[:errors] = ["The User Name or Password is incorrect"]
-		erb :"sessions/new"
+		redirect to('/')
 	end
 end	
 
