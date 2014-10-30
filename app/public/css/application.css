@@ -35,38 +35,60 @@ section.links {
 
 #holder {
   background:#C0DEED;
-  width: 968px;
+  width: 100%;
   height: 1300px;
   border: solid 1px rgb(250,250,250);
 }
 
-section aside {
-  width: 290px;
-  font-size: 75%;
-  margin: 1% 0% 2% 60%;
-  display:block;
-}
-  
-aside {
+#forms-wrapper {
+  display: inline;
   position: relative;
-  background-color: rgb(250,250,250);
-  opacity: 0.6;
+  width: 295px;
+  min-height: 400px;
+  height: auto;
+  float:left;
+}
+/*
+#forms-holder {
+  display: inline;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: solid 1px rgb(250,250,250);
+}
+*/
+#peeps-wrapper {
+  display: block;
+  background: transparent;
+  position: relative;
+  width: 650px;
+  min-height: 800px;
+  height: auto;
   float: right;
-  width: 600px;
-  height: 1275px;
-  margin: 2px;
-  border: solid 2px rgb(250,250,250);
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
-  padding: 0px 5px 5px 5px;
 }
 
-aside h2 {
-  margin: 10px 0 0 150px;
-  border: solid 2px rgb(250,250,250);
-  border-radius: 10px;
-  width: 200px;
-  padding: 0 0 0 100px;
+#peeps-holder {
+ /* display: inline;
+  float: right;
+*/
+}
+/*
+section aside {
+  width: 690px;
+  font-size: 1em;
+  margin: 1% 0% 2% 60%;
+}*/
+
+#peeps{
+  width: 65%;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  border: white solid 2px;
+  border-radius: 50px;
 }
 
 .button {
