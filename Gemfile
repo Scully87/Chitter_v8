@@ -12,6 +12,7 @@ gem 'dm-timestamps'
 gem 'dm-validations'
 gem 'rake'
 gem 'pg'
+gem 'json'
 
 group :development, :test do
 	gem 'rspec'

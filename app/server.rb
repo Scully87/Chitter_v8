@@ -20,6 +20,18 @@ get '/' do
 	erb :index
 end
 
+get '/api/users' do
+	content_type :json
+	users = User.all
+	return users.to_json
+end
+
+get '/api/peeps' do
+	content_type :json
+	greets = Greet.all
+	return greets.to_json
+end
+
 post '/greets' do
 	@current_user =
 	@greet = Greet.create(body: params[:body],

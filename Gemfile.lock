@@ -115,6 +115,7 @@ DEPENDENCIES
   dm-postgres-adapter
   dm-timestamps
   dm-validations
+  json
   launchy
   pg
   rack-flash3
