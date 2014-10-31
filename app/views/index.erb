@@ -11,8 +11,8 @@
 					<section class="sign_in">
 						<h1>Sign back in to Chitter</h1>
 							<form method="post" action="/sessions">
-							    <input style="width: 200px; height: 30px" type="text" name="user_name" placeholder="Username" id="post_submits"/>
-							    <br><input style="width: 200px; height: 30px" name="password" class="input_text" type="password" placeholder="Password"id="post_submits"/><br><br>
+							    <input style="width: 206px; height: 30px" type="text" name="user_name" placeholder="Username" id="post_submits"/>
+							    <input style="width: 206px; height: 30px" name="password" class="input_text" type="password" placeholder="Password"id="post_submits"/><br><br>
 							    <input type="submit" class="button" value="Sign In!" id="greet_button">
 							</form>
 					</section>
@@ -54,7 +54,6 @@
 				<section id="peeps-holder">
 					<aside>
 					 	<h2>Current Peeps....</h2>
-					 
 							<section id="peeps">
 								<% @greets.reverse.each do |greet| %><br>
 		  					<p class="user_greet"><%=h greet.user_name %></p>
