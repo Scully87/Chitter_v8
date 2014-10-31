@@ -29,6 +29,7 @@ end
 get '/api/peeps' do
 	content_type :json
 	greets = Greet.all
+	p greets.to_json
 	return greets.to_json
 end
 

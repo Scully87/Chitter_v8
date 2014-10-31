@@ -15,7 +15,7 @@ bouncingImages = new Object();
 
 // CONFIGURATION:
 
-bouncingImages.imgCount = 5;
+bouncingImages.imgCount = 3;
 bouncingImages.imgWidth = 50;
 bouncingImages.imgHeight = 50;
 bouncingImages.imgSrc = 'images/birdie_new.png';

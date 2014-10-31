@@ -1,13 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-
 	<section id="wrapper">
-		<section id="holder">
-			
+		<section id="holder">			
 			<section id="forms-wrapper">
-				<!-- <section id="forms-holder"> -->
-
 					<section class="sign_in">
 						<h1>Sign back in to Chitter</h1>
 							<form method="post" action="/sessions">
@@ -16,10 +12,8 @@
 							    <input type="submit" class="button" value="Sign In!" id="greet_button">
 							</form>
 					</section>
-
 					<section class="sign_up">
 						<h1>Sign up to join Chitter</h1>
-					
 							<form action="/users" method="post">
 								<input style="width: 200px; height: 30px" name="user_name" type="text" placeholder="Create Username" id="post_submits"><br>
 								<input style="width: 200px; height: 30px" name="name" type="text" placeholder="Your name" id="post_submits"><br>
@@ -29,7 +23,6 @@
 								<input type="submit" class="button"  value="Join Gritter!" id="greet_button">
 							</form>
 					</section>
-
 					<% if current_user %>
 						<section class="logged_in">
 						  Hey, <%= current_user.user_name %>!<br>
@@ -37,7 +30,6 @@
 							    <input type="hidden" name="_method" value="delete"><input type="submit" value="Sign Out!" class="button" id="sign_out_button">
 							  </form>
 						</section>
-	 
 						<section class="post_greet">  	
 						  <form method="post" action="/greets"><br>
 						    Peep : <br><br><input type="text" name="body" placeholder="What's on your mind......" style="width: 200px; height: 40px" height="10px" id="post_submits_greet"><br><br>
@@ -47,30 +39,21 @@
 						  </form>
 						</section>
 					<% end %>
-				<!-- </section> -->
 			</section>
-
 			<section id="peeps-wrapper">
 				<section id="peeps-holder">
 					<aside>
 					 	<h2>Current Peeps....</h2>
-							<section id="peeps">
-								<% @greets.reverse.each do |greet| %><br>
-		  					<p class="user_greet"><%=h greet.user_name %></p>
-		  					<p class="body_greet"><%=h greet.body %></p>
-		  					<p class="time_greet">Greeted at <%= greet.created_at.to_s.chars[0..15].each_slice(10).to_a.rotate.flatten.drop(1).insert(5, " ").join %></p><br>
-		 						<% end %>
-							</section>
+					 		<section id="peep_list"></section>
+								<template id="peeps">
+			  					<p class="user_greet">{{user_name}}</p>
+			  					<p class="body_greet">{{body}}</p>
+			  					<p class="time_greet">Greeted at {{created_at}}</p><br>
+								</template>
 					</aside> 
 				</section>
 			</section>
 		</section>	
 	</section>
-
-
-
-
-
-
 </body>
 </html>

@@ -13,3 +13,14 @@ $(document).ready(function() {
 	});
 
 });
+
+$.getJSON('/api/peeps', function(peepData) {
+		var source = $('#peeps').html();
+		var template = Handlebars.compile(source);
+		var peepList = $.each(peepData, function(count, listOfAllPeeps) {})
+
+			$.each(peepList, function(count, individualPeep) {
+				console.log(individualPeep)
+				$('#peeps-holder').append(template(individualPeep));
+			});
+});
