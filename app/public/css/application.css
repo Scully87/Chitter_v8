@@ -1,5 +1,6 @@
 * {
   color: black;
+  font-family: 'Abel', sans-serif;
 }
 
 body {
@@ -37,58 +38,111 @@ section.links {
   background:#C0DEED;
   width: 100%;
   height: 1300px;
-  border: solid 1px rgb(250,250,250);
+  /*border: solid 1px rgb(250,250,250);*/
 }
 
 #forms-wrapper {
   display: inline;
   position: relative;
-  width: 295px;
+  width: 315px;
   min-height: 400px;
   height: auto;
-  float:left;
+  float:right;
 }
-/*
+
 #forms-holder {
   display: inline;
   position: relative;
   width: 100%;
   height: 100%;
-  border: solid 1px rgb(250,250,250);
+  /*border: solid 1px rgb(250,250,250);*/
 }
-*/
+
+
+section.sign_in {
+  position: absolute;
+  width: 80%;
+  padding: 23px;
+  font-size: 35px;
+ /* border: white solid 2px;
+  border-radius: 50px;*/
+  text-align: center;
+}
+
+section.sign_up {
+  width: 80%;
+  padding: 23px;
+  font-size: 35px;
+  /*border: white solid 2px;
+  border-radius: 50px;*/
+  text-align: center;
+}
+
 #peeps-wrapper {
+  background-color: rgb(238,238,238);
   display: block;
   background: transparent;
   position: relative;
   width: 650px;
   min-height: 800px;
+  padding: 10px 0 0 0;
   height: auto;
   float: right;
 }
 
-#peeps-holder {
- /* display: inline;
+h2 {
+  font-size: 3em;
+  padding-bottom: 20px;
+  position: center;
   float: right;
-*/
+  padding-right: 275px;
 }
-/*
-section aside {
-  width: 690px;
-  font-size: 1em;
-  margin: 1% 0% 2% 60%;
-}*/
 
 #peeps{
-  width: 65%;
-  padding-bottom: 25px;
+  width: 100%;
+  padding-top: 40px;
   text-align: center;
   font-weight: bolder;
   font-style: italic;
   margin-left: auto;
   margin-right: auto;
-  border: white solid 2px;
-  border-radius: 50px;
+/*  border: white solid 2px;
+  border-radius: 50px;*/
+}
+
+p.user_greet{
+  float: left;
+  font-size: 15px;
+  color: rgb(100,100,100);
+  font-style: italic;
+  font-weight: bold;
+  padding: 0px 40px 30px 20px;
+}
+
+p.body_greet{
+  color: rgb(250,250,250);
+  font-size: 25px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+p.time_greet{
+  color: rgb(100,100,100);
+  font-size: 13px;
+  text-align: right;
+  padding-right: 19px;
+}
+
+section.post_greet{
+  position: absolute;
+  width: 80%;
+  padding: 23px;
+  font-size: 35px;
+  text-align: center;
+}
+
+footer {
+  position: center;
 }
 
 .button {

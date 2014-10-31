@@ -2,12 +2,11 @@
 <html>
 <body>
 
-
 	<section id="wrapper">
 		<section id="holder">
 			
 			<section id="forms-wrapper">
-				<section id="forms-holder">
+				<!-- <section id="forms-holder"> -->
 
 					<section class="sign_in">
 						<h1>Sign back in to Gritter</h1>
@@ -41,20 +40,20 @@
 	 
 						<section class="post_greet">  	
 						  <form method="post" action="/greets">
-						    Greet : <input type="text" name="body" placeholder="..whatcha thinking.........." id="post_submits_greet">
+						    Peep : <input type="text" name="body" placeholder="..whatcha thinking.........." id="post_submits_greet">
 						    <input type="hidden" name="user_name" value="<%= current_user.user_name %>">
 						    <input type="hidden" name="name" value="<%= current_user.name %>">
 						    <input type="submit" value="Greet!" id="greet_button">
 						  </form>
 						</section>
 					<% end %>
-				</section>
+				<!-- </section> -->
 			</section>
 
 			<section id="peeps-wrapper">
 				<section id="peeps-holder">
 					<aside>
-					 	<h2 class="peeps-holder">Peeps</h2>
+					 	<h2>Current Peeps....</h2>
 					 
 							<section id="peeps">
 								<% @greets.reverse.each do |greet| %><br>
@@ -64,7 +63,7 @@
 		 						<% end %>
 							</section>
 					</aside> 
-				</section>>
+				</section>
 			</section>
 		</section>	
 	</section>

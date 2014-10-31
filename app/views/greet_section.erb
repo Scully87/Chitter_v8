@@ -7,7 +7,7 @@
  
 <section class="post_greet">  	
   <form method="post" action="/greets">
-    Greet : <input type="text" name="body" placeholder="..whatcha thinking.........." id="post_submits_greet">
+    Peep : <input type="text" name="body" placeholder="..whatcha thinking.........." id="post_submits_greet">
     <input type="hidden" name="user_name" value="<%= current_user.user_name %>">
     <input type="hidden" name="name" value="<%= current_user.name %>">
     <input type="submit" value="Greet!" id="greet_button">
