@@ -25,7 +25,7 @@ section.links {
 }
 
 #wrapper {
-  background: transparent;
+  background:#C0DEED;
   position: relative;
   width: 968px;
   padding-top: 63px;
@@ -35,17 +35,19 @@ section.links {
 }
 
 #holder {
-  background:#C0DEED;
+  background: transparent; 
   width: 100%;
   height: 1300px;
   /*border: solid 1px rgb(250,250,250);*/
 }
 
 #forms-wrapper {
+  border-radius: 50px;
+  background: rgb(250,250,250);
   display: inline;
   position: relative;
-  width: 315px;
-  min-height: 400px;
+  width: 300px;
+  min-height: 250px;
   height: auto;
   float:right;
 }
@@ -78,16 +80,26 @@ section.sign_up {
   text-align: center;
 }
 
+section.logged_in{
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+}
+
 #peeps-wrapper {
-  background-color: rgb(238,238,238);
+  border-radius: 50px;
+  background: rgb(250,250,250);
+  /*background-color: rgb(238,238,238);*/
   display: block;
-  background: transparent;
+  /*background: transparent;*/
   position: relative;
-  width: 650px;
+  width: 640px;
   min-height: 800px;
-  padding: 10px 0 0 0;
+  /*padding: 10px 3px 3px 10px;*/
   height: auto;
-  float: right;
+  float: left;
 }
 
 h2 {
@@ -115,12 +127,12 @@ p.user_greet{
   font-size: 15px;
   color: rgb(100,100,100);
   font-style: italic;
-  font-weight: bold;
+  /*font-weight: bold;*/
   padding: 0px 40px 30px 20px;
 }
 
 p.body_greet{
-  color: rgb(250,250,250);
+  /*color: rgb(250,250,250);*/
   font-size: 25px;
   padding-left: 15px;
   text-align: left;
