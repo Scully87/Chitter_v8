@@ -23,6 +23,7 @@ end
 get '/api/users' do
 	content_type :json
 	users = User.all
+	p users.to_json
 	return users.to_json
 end
 
@@ -42,10 +43,10 @@ post '/greets' do
 	redirect to '/'
 end
 
-get '/users/new' do
-	@user = User.new
-	erb :"users/new"
-end
+# get '/users/new' do
+# 	@user = User.new
+# 	erb :"users/new"
+# end
 
 post '/users' do
 	@user = User.create(
@@ -63,9 +64,9 @@ post '/users' do
 	end
 end
 
-get '/sessions/new' do
-	erb :"sessions/new"
-end
+# get '/sessions/new' do
+# 	erb :"sessions/new"
+# end
 
 post '/sessions' do
 	user_name, password = params[:user_name], params[:password]

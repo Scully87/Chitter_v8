@@ -24,3 +24,5 @@ $.getJSON('/api/peeps', function(peepData) {
 				$('#peeps-holder').append(template(individualPeep));
 			});
 });
+
+
