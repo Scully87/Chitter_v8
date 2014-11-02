@@ -15,5 +15,7 @@ describe Greet do
 	 	  greet.destroy
 	 	  expect(Greet.count).to eq(0)
 	  end
+
 	end
+	
 end	
