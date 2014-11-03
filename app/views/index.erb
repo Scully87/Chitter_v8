@@ -49,7 +49,7 @@
 									<% @greets.reverse.each do |greet| %><br>
 			  					<p class="user_greet">{{user_name}}</p>
 			  					<p class="body_greet">{{body}}</p>
-			  					<p class="time_greet">Greeted at {{created_at}}<%= greet.created_at.to_s.chars[0..15].each_slice(10).to_a.rotate.flatten.drop(1).insert(5, " ").join %></p><br>
+			  					<p class="time_greet">Greeted at{{created_at}}</p><br>
 			  					<% end %>
 								</template>
 					</aside> 
