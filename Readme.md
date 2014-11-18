@@ -2,7 +2,7 @@ Chitter
 =========
 ######This project is under development
 
-###Creating a Twitter clone in Ruby
+###Creating a Twitter clone in Javascript
 
 ####Technologies Used:
 
