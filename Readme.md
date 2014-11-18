@@ -6,9 +6,9 @@ Chitter
 
 ####Technologies Used:
 
-  - Ruby
+  - Javascript
   - Sinatra
-  - RSpec
+  - Jasmine
   - JQuery
   - PostgresQL
   - BCrypt
@@ -19,12 +19,12 @@ How to use
 ----------
 Clone the repository:
 ```shell
-$ git clone git@github.com:scully87/Bookmark_Manager.git
+$ git clone git@github.com:Scully87/Chitter_v8.git
 ```
 
 Change into the directory:
 ```shell
-$ cd Bookmark_Manager
+$ cd Chitter_v8
 ```
 
 Open in command line:
